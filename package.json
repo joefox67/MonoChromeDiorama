@@ -1,0 +1,9 @@
+{
+  "engines": {
+    "node": 10
+  },
+  "scripts": {
+    "install:gif": "curl http://jnordberg.github.io/gif.js/gif.js -o .data/gif.js && curl http://jnordberg.github.io/gif.js/gif.worker.js -o .data/gif.worker.js",
+    "start": "[ ! -e .data/gif.js ] && npm run install:gif ; ws"
+  }
+}
